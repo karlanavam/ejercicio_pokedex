@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Pokedex</title>
-</head>
-<body>
-	<h1>Pokedex!</h1>
-	<br>
-	<h2>Crea tu pokemon!</h2>
-	<input type="text" id="nombrePokemon" placeholder="Nombre" value="">
-	<input type="text" id="colorPokemon" placeholder="Color" value="">
-	<input type="text" id="puntosAtaque" placeholder="Puntos de ataque" value="">
-	<button type="button" id="crearPokemon" onclick="crearPokemon()">Crear :) </button>
-	<br>
-	<br>
-	<select id="listaPokemons">
-	
-	</select>
-	vs.
-	<select id="" placeholder="Pokemon no. 2">
-	</select>
-	<button type="button">Pelea! Pelea!</button>
+ <head>
+   <meta charset="utf-8">
+   <title></title>
+ </head>
+ <body>
 
-	<h3>Rango de tus pokemones:</h3>
+ <h1 align = "center">POKEDEX!</h1>
 
+ <div class = "container" align = "center">
+   <input type = "text" id = "nombrePokemon" placeholder="Nombre Pokemón">
+   <input type = "text" id = "colorPokemon" placeholder="Color Pokemón">
+   <input type = "text" id = "puntosAtaque" placeholder = "Puntos de Ataque ">
+   <br>
+   <button type = "button" id = "crearPokemon" onclick = "crearPokemon()"> Crear Pokemon </button>
+   <br>
+   <br>
 
+   <select name="pokemonesUno" id ="pokemones">
+    </select>
 
-	<script type="text/javascript" src="./assets/javascript/main.js"></script>
-</body>
+    <select name="pokemonesDos" id ="pokemones2">
+    </select>
+    <br>
+    <br>
+
+   <button type="button" id="crearPokemon" onclick="peleaPokemon()"> Pelear </button>
+ </div>
+
+   <script src="./assets/javascript/main.js"> </script>
+ </body>
 </html>
